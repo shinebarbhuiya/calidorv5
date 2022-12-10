@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="stylesheet" href="{% static 'build/tailwind.css' %}" />
+  <title>{% block title %} {% endblock title %}</title>
+	<link rel="canonical" href="https://landingkit.com" />
+  <meta name="description" content="SaasFolio is a conversion optimized landing page template for SaaS and Startups. It differences itself from other templates, by focussing on strong sales copy"/>
+</head>
+{% include 'landing/nav.html' %}
+{% block body %}
+
+{% endblock body %}
+{% include 'landing/footer.html'  %}
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'js/vendor/jquery.slim.min.js' %}"></script>
+    <script src="https://unpkg.com/vanilla-lazyload@15.1.1/dist/lazyload.min.js"></script>
+    <!-- build:js -->
+    <script src="{% static 'js/app.js' %}"></script>
+    <!-- endbuild -->
+</html>

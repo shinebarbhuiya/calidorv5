@@ -1,0 +1,65 @@
+{% extends 'dashboard/main.html'  %}
+{% load static %}
+
+{% block body %}
+
+<div class="container-fluid page-body-wrapper">
+
+
+  <!-- partial -->
+  <!-- partial:partials/_sidebar.html -->
+
+
+
+  {% include 'dashboard/sidebar.html' %}
+  <!-- partial -->
+  <div class="main-panel">
+    <div class="content-wrapper">
+      
+
+    <div class="row">
+      <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="text-justify mb-5 ">🎉 We have generated these blog topic ideas for you 🎉</h2>
+            
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr class="bg-primary text-white">
+                    <th class="card-title text-white">Blog Title</th>
+                    <th class="card-title text-white">Save Topic</th>
+                    <th class="card-title text-white">Use Topic</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for blog in blogTopics %}
+                  <tr>
+                    
+                
+                
+                    <td class="card-title mb-0 text-primary">{{blog}}</td>
+                    <td><a href="{% url 'save_topic' blog %}"><button class="btn btn-primary">Save Topic</button></a></td>
+                    <td><a href="{% url 'use_topic' blog %}"><button class="btn btn-primary">Use Topic</button></a></td>
+
+                  </tr>
+                  {% endfor %}
+                 
+                
+               
+               
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content-wrapper ends -->
+    {% include  'dashboard/footer.html' %}
+    <!-- partial -->
+  </div>
+  <!-- main-panel ends -->
+</div>
+{% endblock body %}

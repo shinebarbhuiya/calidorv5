@@ -1,0 +1,64 @@
+{% load static %}
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+      <li class="nav-item">
+        <!-- <li class="nav-item active"> -->
+        <a class="nav-link" href="{% url 'dashboard' %}">
+          <i class="icon-grid menu-icon"></i>
+          <span class="menu-title">Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+          <i class="ti-pencil-alt2 menu-icon"></i>
+          <span class="menu-title">Blog Assistant</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="form-elements">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"><a class="nav-link" href="{% url 'blog_topic_generator' %}">Blog Post Writer</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#code_tools" aria-expanded="false" aria-controls="code_tools">
+          <i class="ti-layout-media-overlay-alt menu-icon"></i>
+          <span class="menu-title">Code AI Tools</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="code_tools">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Code Explainer</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">SQL Command Generator</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#sales_copy" aria-expanded="false" aria-controls="sales_copy">
+          <i class="ti-money menu-icon"></i>
+          <span class="menu-title">Sales Copy Generator</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="sales_copy">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Amazon Product Description</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" data-toggle="collapse" href="#settings" aria-expanded="false" aria-controls="settings">
+          <i class="ti-settings menu-icon"></i>
+          <span class="menu-title">Settings</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="settings">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">Profile</a></li>
+            <li class="nav-item"><a class="nav-link " href="{% url 'logout' %}">Logout</a></li>
+          </ul>
+        </div>
+      </li>
+
+
+    </ul>
+  </nav>

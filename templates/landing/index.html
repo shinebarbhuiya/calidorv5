@@ -1,0 +1,428 @@
+{% extends  'landing/main.html' %}
+{% load static %}
+
+
+{% block body %}
+<body class="antialiased overflow-hidden overflow-y-scroll">
+    <!-- Start Hero -->
+    <div class="hero w-full">
+        
+      <div class="container mx-auto mt-8"> 
+        <!-- Start Hero Content -->
+        <div class="py-8 md:py-16 hero__content text-center w-4/5 mx-auto fade-in fade-in-first">
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            Your One Stop Solution for All Writing Needs!</h1>
+          <p class="text-xl pt-4 pb-8 text-gray-700">AI writing assistant that helps you create content quickly and efficiently, without compromising on quality!</p>
+          <div class="flex justify-center items-center flex-col">
+            <a class="bg-yellow-500 hover:bg-yellow-600 rounded border border-yellow-600 shadow font-semibold px-6 py-2 inline-block transition duration-500 ease-in-out cursor-pointer text-xl" href="{% static 'register' %}">Start Trial</a>
+            <small class="capitalize mt-2 text-gray-700">Reduce Risk: Free 14 day trial</small>
+          </div>
+        </div>
+        <!-- End Hero Content -->
+        <!-- Start Hero Device -->
+        <div class="text-center fade-in fade-in-second">
+          <div class="">
+              <div class="hero-mockup w-5/6 sm:col-4/6 w-4/5 lg:w-full mx-auto relative">
+                  <img src="{% static 'img/dashboard.png' %}" alt="Hero Device" class="md:max-w-xl lg:max-w-4xl mx-auto z-10 relative"/>
+                  <!-- Generated at https://www.landingfolio.com/tools/mockup-generator. Use coupon: FIRSTMONTHFREE to use it one month for free-->
+              </div>
+          </div>
+        </div>
+        <!-- End Hero Device -->
+        <!-- Start Hero Logos -->
+        <div class="hero__logos text-center mt-4 fade-in fade-in-third">
+          <div class="">
+            <div class="lg:w-full">
+              <span class="font-bold">Join 1,000+ bloggers and writers who use Calidor daily</span>
+              <ul class="list-none flex justify-center items-center content-center mt-3">
+                <li class="p-4 md:px-4"><img src="{% static 'img/logos/logo-1.png' %}" class="w-10" alt="Testimonial Logo by X"/></li>
+                <li class="p-4 md:px-4"><img src="{% static 'img/logos/logo-2.png' %}" class="w-10" alt="Testimonial Logo by X"/></li>
+                <li class="p-4 md:px-4"><img src="{% static 'img/logos/logo-3.png' %}" class="w-10" alt="Testimonial Logo by X"/></li>
+                <li class="p-4 md:px-4"><img src="{% static 'img/logos/logo-4.png' %}" class="w-10" alt="Testimonial Logo by X"/></li>
+                <li class="p-4 md:px-4"><img src="{% static 'img/logos/logo-5.png' %}" class="w-10" alt="Testimonial Logo by X"/></li>
+                <li class="hidden md:block px-4"><img src="{% static 'img/logos/logo-6.png' %}" class="w-10" alt="Testimonial Logo by X"/></li>
+                <li class="hidden md:block px-4"><img src="{% static 'img/logos/logo-7.png' %}" class="w-10" alt="Testimonial Logo by X"/></li>
+                <li class="hidden md:block px-4"><img src="{% static 'img/logos/logo-8.png' %}" class="w-10" alt="Testimonial Logo by X"/></li>
+                <li class="hidden md:block px-4"><img src="{% static 'img/logos/logo-9.png' %}" class="w-10" alt="Testimonial Logo by X"/></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Logos -->
+      </div>
+      <!-- End Hero Content -->
+    </div>
+    <!-- Start Benefits -->
+    <div class="border-t border-b border-blue-200 py-16 bg-blue-100 my-16 px-4 fade-in fade-in-fourth">
+      <div class="container mx-auto">
+        <!-- Start Benefits Title -->
+        <div class="mb-8">
+          <div class="w-full lg:w-8/12 text-center mx-auto">
+            <h2 class="text-2xl md:text-4xl leading-tight font-bold">Get High-Quality Content For Your Website Without Lifting A Finger!</h2>
+            <p class="text-lg py-2 text-gray-700">If you're struggling to come up with new ideas, Calidor can help you get over creative blocks and produce great content at a much faster pace.</p>
+          </div>
+        </div>
+        <!-- End Benefits Title -->
+        <!-- Start Benefits Content -->
+        <div class="my-16 lg:flex">
+          <!-- Start Benefit 1 -->
+          <div class="my-8 lg:my-0 w-full lg:w-2/6 text-center mt-4 flex flex-col justify-between align-content-start px-4">
+              <img src="{% static 'img/drawing-music.png' %}" class="lg:w-2/3 lazy self-start mx-auto py-2 md:py-4 w-1/2 md:w-1/3 lg:w-auto" alt="Music Drawing"/>
+              <!-- License by Icon8. Find many other icons in this style via https://icons8.com/ouch/style/lime -->
+              <div>
+                <h3 class="font-semibold text-xl md:text-2xl lg:text-xl">Blog Assistant</h3>
+                <p class="text-gray-600">Write blog at a much faster pace on autopilot, just give it direction</p>
+              </div>
+          </div>
+          <!-- End Benefit 1 -->
+          <!-- Start Benefit 2 -->
+          <div class="my-8 lg:my-0 w-full lg:w-2/6 text-center mt-4  flex flex-col align-content-start justify-between px-4">
+            <img src="{% static 'img/drawing-task.png' %}" class="lg:w-2/3 lazy self-start mx-auto py-2 md:py-4 w-1/2 md:w-1/3 lg:w-auto" alt="Task Drawing"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/ouch/style/lime -->
+            <div>
+              <h3 class="font-semibold text-xl md:text-2xl lg:text-xl">Code Explainer</h3>
+              <p class="text-gray-600">Just put in some complex piece of code that you are unable to understand and it will explain it</p>
+            </div>
+          </div>
+          <!-- End Benefit 2 -->
+          <!-- Start Benefit 3 -->
+          <div class="my-8 lg:my-0 w-full lg:w-2/6 text-center mt-4  flex flex-col align-content-start justify-between px-4">
+            <img src="{% static 'img/drawing-coffee.png' %}" class="lg:w-1/2 lazy self-start mx-auto py-2 md:py-4 w-1/2 md:w-1/3 lg:w-auto" alt="Coffee Drawing"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/ouch/style/lime -->
+            <h3 class="font-semibold text-xl md:text-2xl lg:text-xl">Marketing</h3>
+            <p class="text-gray-600">Generate ads copy, social media posts, and write content to engage users on your own  </p>
+          </div>
+          <!-- End Benefit 3 -->
+        </div>
+        <!-- Start Benefit Testimonial -->
+        <!-- <div class=" mt-4">
+          <div class="lg:w-1/2 mx-auto text-center mt-4">
+            <blockquote class="italic text-lg text-gray-700">
+              “Powerfull and relevant testimonial of Customer X. This content should focus on the result the product had for this customer or answer a doubt your potential customer could have. "
+            </blockquote>
+            <div class="mt-3 flex justify-center content-center items-center">
+                <img src="{% static 'img/avatar/avatar-1.png' %}" class="w-8 lazy self-start" alt="Testimonial Avatar"/>
+                
+                <span class="ml-2 font-bold text-gray-900">Customer Name, CEO of Company Name</span>
+            </div>
+          </div>
+        </div> -->
+        <!-- End Benefit Testimonial -->
+      </div>
+    </div>
+    <!-- End Benefit Content -->
+    <!-- Start Features Block -->
+  
+    <!-- End Features Block -->
+    <!-- Start CTA Between Block -->
+    <div class="py-8 bg-blue-100 border-t border-b border-blue-200">
+      <div class="container mx-auto">
+        <div class="flex flex-col lg:flex-row justify-center content-center items-center text-center lg:text-left">
+          <!-- Start Image -->
+          <img src="{% static 'img/drawing-try.png' %}" class="lazy px-4 self-start mx-auto lg:mx-0 w-32" alt="Drawing Try"/>
+          <!-- License by Icon8. Find many other icons in this style via https://icons8.com/ouch/style/lime -->
+          <!-- End Image -->
+          <!-- Start Content -->
+          <div class="px-4 flex flex-col content-center my-2 md:my-4 mx-4 md:my-0">
+            <h4 class="text-lg font-semibold pb-0 mb-0 mb-md-0">Risk Reduction: Try Calidor 14 days for free</h4>
+            <p class="mb-0 text-gray-700">Take a tour of the Calidor without any risk.</p>
+          </div>
+          <!-- End Content -->
+          <!-- Start Button -->
+          <a href="{% static 'register' %}" class="px-4 btn btn-secundary bg-green-500 rounded text-white font-semibold border border-green-700 shadow py-2 hover:bg-green-600"> Clear CTA Text</a>
+          <!-- End Button -->
+        </div>
+      </div>
+    </div>
+    <!-- End CTA Between Block -->
+    <!-- Start Testimonial Block -->
+   
+    <!-- End Testimonial Block -->
+    <!-- Start Feature Summary Block -->
+    <div class="bg-gray-100 text-center md:text-left py-16 px-4">
+      <div class="container mx-auto">
+        <!-- Start Title -->
+        <div class="pb-4 lg:pb-8">
+          <div class="lg:w-full text-center">
+            <h2 class="text-2xl md:text-4xl font-bold">Summarize your products main benefits</h2>
+          </div>
+        </div>
+        <!-- End Title -->
+        <!-- Start Feature  -->
+        <div class="flex flex-col md:flex-row md:flex-wrap">
+          <!-- Start Feature -->
+          <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img src="{% static 'img/icon-settings.png' %}" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+              <h4 class="mb-0 font-bold">Time-saving</h4>
+              <p class="mb-0">Will save you a lot of time</p>
+            </div>
+          </div>
+          <!-- End Feature -->
+          <!-- Start Feature -->
+          <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img src="{% static 'img/icon-star.png' %}" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+              <h4 class="mb-0 font-bold">Efficient</h4>
+              <p class="mb-0">Very efficient results</p>
+            </div>
+          </div>
+          <!-- End Feature -->
+          <!-- Start Feature -->
+          <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img src="{% static 'img/icon-idea.png' %}" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+              <h4 class="mb-0 font-bold">Accurate</h4>
+              <p class="mb-0">Very accurate results</p>
+            </div>
+          </div>
+          <!-- End Feature -->
+          <!-- Start Feature -->
+          <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img src="{% static 'img/icon-user.png' %}" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+              <h4 class="mb-0 font-bold">Cost-effective</h4>
+              <p class="mb-0">Affordable than hiring a writer</p>
+            </div>
+          </div>
+          <!-- End Feature -->
+        </div>
+        <!-- End Feature  -->
+        <!-- Start Feature  -->
+        <div class="flex  flex-col md:flex-row md:flex-wrap my-4">
+          <!-- Start Feature -->
+          <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img src="{% static 'img/icon-idea.png' %}" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+              <h4 class="mb-0 font-bold">Fast</h4>
+              <p class="mb-0">Writes content at fast speed</p>
+            </div>
+          </div>
+          <!-- End Feature -->
+          <!-- Start Feature -->
+          <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img src="{% static 'img/icon-user.png' %}" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+              <h4 class="mb-0 font-bold">No Plagiarism</h4>
+              <p class="mb-0">Content are original</p>
+            </div>
+          </div>
+          <!-- End Feature -->
+          <!-- Start Feature -->
+          <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img src="{% static 'img/icon-star.png' %}" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+              <h4 class="mb-0 font-bold">Personalized</h4>
+              <p class="mb-0">Put in your own prompts</p>
+            </div>
+          </div>
+          <!-- End Feature -->
+          <!-- Start Feature -->
+          <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img src="{% static 'img/icon-star.png' %}" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+              <h4 class="mb-0 font-bold">Relevant</h4>
+              <p class="mb-0">Feels like hiring a writer</p>
+            </div>
+          </div>
+          <!-- End Feature -->
+        </div>
+        <!-- End Feature  -->
+        <!-- Start Feature  -->
+        <div class="flex  flex-col md:flex-row md:flex-wrap my-4">
+          <!-- Start Feature -->
+          <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img src="{% static 'img/icon-settings.png' %}" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+              <h4 class="mb-0 font-bold">Engaging</h4>
+              <p class="mb-0">Very user friendly UI</p>
+            </div>
+          </div>
+          <!-- End Feature -->
+          <!-- Start Feature -->
+          <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img src="{% static 'img/icon-star.png' %}" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+              <h4 class="mb-0 font-bold">Sophisticated</h4>
+              <p class="mb-0">All sort of topic</p>
+            </div>
+          </div>
+          <!-- End Feature -->
+          <!-- Start Feature -->
+          <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img src="{% static 'img/icon-idea.png' %}" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+              <h4 class="mb-0 font-bold">Innovative</h4>
+              <p class="mb-0">Make lives easier</p>
+            </div>
+          </div>
+          <!-- End Feature -->
+          <!-- Start Feature -->
+          <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img src="{% static 'img/icon-user.png' %}" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+              <h4 class="mb-0 font-bold">Intelligent</h4>
+              <p class="mb-0">It understands your prompts well</p>
+            </div>
+          </div>
+          <!-- End Feature -->
+        </div>
+        <!-- End Feature  -->
+      </div>
+    </div>
+    <!-- End Feature Summary -->
+    <div class="py-16 px-4 md:px-16 lg:px-0">
+      <div class="container mx-auto py-4">
+        <!-- Start Title -->
+        <div class="pb-4 lg:pb-8">
+          <div class="lg:w-4/5 mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold">Pricing Table</h2>
+            <!-- <p class="text-lg text-gray-700 my-4 w-2/3 mx-auto">Choose between this pricing block, or end the page with a CTA Block as shown below. Choose either one.</p> -->
+          </div>
+        </div>
+        <!-- End Title -->
+        <!-- Start Pricing Block -->
+        <div class="w-full flex flex-col lg:flex-row fade-in fade-in-second mb-8" id="pricing">
+          <!-- Start Pricing Option-->
+          <div class="w-full lg:w-1/3 mb-8 bg-white max-w-lg mx-auto lg:-mr-2 lg:ml-0 lg:mt-8 lg:mb-0">
+            <div class="border border-gray-300 rounded p-8 px-16 text-center">
+              <div>
+                <h3 class="font-semibold text-lg">Standard</h3>
+                <div class="relative flex justify-center mt-8 mb-4">
+                  <span class="text-xl -mt-4">$</span>
+                  <span class="text-6xl ml-1 leading-5">9.99</span>
+                </div>
+                <div class="text-gray-600 text-sm">Billed per month</div>
+                <!-- <p class="mt-8 mb-6 text-gray-600">Explain biggest difference of this plan here</p> -->
+              </div>
+              <div class="text-left">
+                <ul class="usps">
+                  <li class="text-gray-800  text-sm py-1 font-semibold">10,000 Words</li>
+                  <li class="text-gray-800  text-sm py-1">5 AI Image Generation</li>
+                  <li class="text-gray-800  text-sm py-1">10 Code Explained</li>
+                  <li class="text-gray-800  text-sm py-1">Normal Support</li>
+                  <li class="text-gray-800  text-sm py-1">Access to all tools</li>
+                </ul>
+              </div>
+              <div class="my-4">
+                <a href="{% static 'register' %}" class="block border border-2 border-gray-500 rounded text-base font-semibold p-4 hover:border-blue-500 hover:text-blue-500">Start free trial now</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Pricing Option-->
+          <!-- Start Pricing Option-->
+          <div class="w-full lg:w-1/3 bg-white shadow-lg max-w-lg mx-auto lg:-mr-2 lg:ml-0 lg:mt-0 lg:mb-0 relative z-10">
+            <div class="border border-gray-300 rounded p-8 px-16 text-center relative">
+              <div class="">
+                <div class="bg-green-300 p-2 rounded-b w-32 mx-auto relative top-0 -mt-8 uppercase text-sm font-semibold text-green-800">Most Popular</div>
+                <h3 class="font-semibold text-lg mt-8">Premium</h3>
+                <div class="relative flex justify-center mt-8 mb-4">
+                  <span class="text-xl -mt-4">$</span>
+                  <span class="text-6xl ml-1 leading-5 font-semibold">29.99</span>
+                </div>
+                <div class="text-gray-600 text-sm">Billed per month</div>
+                <!-- <p class="mt-8 mb-6 text-gray-600">This is the plan you want to sell most</p> -->
+              </div>
+              <div class="text-left">
+                <ul class="usps">
+                  <li class="text-gray-800  text-sm py-1 font-semibold">50,000 Words</li>
+                  <li class="text-gray-800  text-sm py-1">50 AI Image Generation</li>
+                  <li class="text-gray-800  text-sm py-1">100 Code Explained</li>
+                  <li class="text-gray-800  text-sm py-1">Priority Support</li>
+                  <li class="text-gray-800  text-sm py-1">Access to all tools</li>
+                </ul>
+              </div>
+              <div class="my-4">
+                <a href="{% static 'register' %}" class="block border border-2 border-yellow-600 bg-yellow-500 rounded text-base font-semibold p-4 hover:border-yellow-700 hover:bg-yellow-600 ">Start free trial now</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Pricing Option-->
+          <!-- Start Pricing Option-->
+          <div class="w-full lg:w-1/3 mt-8 bg-white max-w-lg mx-auto lg:-mr-2 lg:ml-0 lg:mt-8 lg:mt-0">
+            <div class="border border-gray-300 rounded p-8 px-16 text-center">
+              <div>
+                <h3 class="font-semibold text-lg">Decoy</h3>
+                <div class="relative flex justify-center mt-8 mb-4">
+                  <span class="text-xl -mt-4">$</span>
+                  <span class="text-6xl ml-1 leading-5">49.99</span>
+                </div>
+                <div class="text-gray-600 text-sm">Billed per month</div>
+                <!-- <p class="mt-8 mb-6 text-gray-600">Make this plan super expensive, so your middle plan looks cheaper</p> -->
+              </div>
+              <div class="text-left">
+                <ul class="usps">
+                  <li class="text-gray-800  text-sm py-1 font-semibold">100,000 Words</li>
+                  <li class="text-gray-800  text-sm py-1">150 AI Image Generation</li>
+                  <li class="text-gray-800  text-sm py-1">300 Code Explained</li>
+                  <li class="text-gray-800  text-sm py-1">Priority Support</li>
+                  <li class="text-gray-800  text-sm py-1">Access to all tools</li>
+                </ul>
+              </div>
+              <div class="my-4">
+                <a href="{% static 'register' %}" class="block border border-2 border-gray-500 rounded text-base font-semibold p-4 hover:border-blue-500 hover:text-blue-500">Start free trial now</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Pricing Option-->
+      </div>
+      <!-- End Pricing Block -->
+      </div>
+    </div>
+    <!-- Start CTA Block -->
+    <div class="bg-yellow-100 py-16 border-t border-yellow-300 px-4 md:px-16 lg:px-0">
+      <div class="container mx-auto py-4">
+        <!-- Start Image -->
+        <div class=" py-4">
+          <div class="lg:w-3/12 col-md-4 mx-auto text-center">
+            <img src="{% static 'img/features-drawing-moonlanding.png' %}" class="lazy mx-auto w-100 w-1/2 lg:w-full" alt="Drawing Moonlanding"/>
+          </div>
+        </div>
+        <!-- End Image -->
+        <!-- Start Content -->
+        <div class="">
+          <div class="lg:w-3/6 mx-auto text-center">
+            <h2 class="text-2xl md:text-4xl lg:text-4xl font-bold">Want to take your content to the next level?</h2>
+            <p class="text-md md:text-xl lg:text-lg pt-4 pb-8 text-gray-800">Look no further, with Calidor you can generate content that feels like hiring a writer yourself but 10x better. </p>
+            <div class="flex justify-center items-center flex- mb-2">
+              <a class="bg-yellow-500 hover:bg-yellow-600 rounded border border-yellow-600 hover:border-yellow-700 shadow font-semibold px-4 py-2 inline-block mx-2 cursor-pointer transition duration-500 ease-in-out" href="{% static 'register' %}">Start Trial</a>
+              <a href="#" class="rounded border border-gray-700 hover:bg-blue-300 px-4 py-2 inline-block mx-2 cursor-pointer transition duration-500 ease-in-out">View pricing</a>
+            </div>
+            <small class="capitalize mt-2">Reduce Risk: Free 14 day trial</small>
+          </div>
+        </div>
+        <!-- End Content -->
+        <!-- Start Testimonial -->
+        <div class=" mt-8 ">
+          <div class="lg:w-1/2 mx-auto mt-4 text-center ">
+            <blockquote class="text-gray-700 italic text-sm  lg:text-lg">
+              “
+              If you're looking for help writing content, Calidor is a great option. The AI-based platform is easy to use and can help you create well-written, engaging content for your website or blog. Plus, the prices are very reasonable. I highly recommend Calidor if you need assistance creating content for your online presence."
+            </blockquote>
+            <div class="mt-3 flex justify-center content-center items-center">
+                <img src="{% static 'img/avatar/khan.jpg' %}" class="w-8 lazy self-start" alt="Testimonial Avatar"/>
+                <!-- Generate free faces via: https://generated.photos/faces -->
+                <span class="ml-2 font-bold text-gray-900"> Phunsukh Wangdu , CEO of TESLALALALA</span>
+            </div>
+          </div>
+        </div>
+        <!-- End Testimonial -->
+      </div>
+    </div>
+    <!-- End CTA Block -->
+    
+
+
+{% endblock body %}

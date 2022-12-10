@@ -1,0 +1,412 @@
+{% extends  'landing/main.html' %}
+{% load static %}
+
+{% block body %}
+<!-- Start Hero -->
+
+<div class="hidden md:block">
+    <ul class="flex flex-">
+        <li>
+          <a class="px-4 py-2 text-gray-700 hover:text-gray-900 transition duration-500 ease-in-out hover:rounded hover:bg-gray-200 rounded text-gray-900" href="../../../templates/saasfolio/tailwind/login.html">Login</a>
+        </li>
+        <li class="nav-item px-2 signup">
+          <a class="text-gray-900 px-3 py-2 bg-yellow-500 hover:bg-yellow-600 rounded border border-yellow-600 shadow font-semibold transition duration-500 ease-in-out cursor-pointer" href="../../../templates/saasfolio/tailwind/signup.html">Signup for free</a>
+        </li>
+    </ul>
+  </div>
+  <!-- End Secondary Navbar -->
+  <!-- Start Mobile Navbar-->
+  <div class="hamburger-menu px-2 py-1 block md:hidden rounded border border-gray-500 uppercase">
+    Menu
+  </div>
+  <div class="navbar mobile-nav px-0 mx-0 hidden md:hidden fixed top-0 left-0 w-full bg-white h-screen fixed z-50 p-3">
+    <div class="flex flex- justify-between px-3 py-2">
+      <img src="../../../templates/saasfolio/tailwind/../../../templates/saasfolio/tailwind/img/logo.png" class="w-32 self-start ml-1"/>
+      <div class="close-menu flex items-center content-center justify-center px-2 py-1 bg-black rounded px-x py-1 text-white uppercase">
+        Close
+      </div>
+    </div>
+    <ul class="flex flex-col text-center mt-2 pt-2 w-full">
+      <li class="active w-full">
+        <a class="w-full font-bold text-lg border-t border-gray-200 block py-3" href="../../../index.html">Home</a>
+      </li>
+      <li class="w-full">
+        <a class="w-full text-lg border-t border-gray-200 block py-3" href="../../../templates/saasfolio/tailwind/features.html">Features</a>
+      </li>
+      <li class="w-full">
+        <a class="w-full text-lg border-t border-gray-200 block py-3" href="../../../templates/saasfolio/tailwind/pricing.html">Pricing</a>
+      </li>
+      <li class="w-full">
+        <a class="w-full text-lg border-t border-gray-200 block py-3" href="../../../templates/saasfolio/tailwind/contact.html">Contact</a>
+      </li>
+      <li class="w-full">
+        <a class="w-full text-lg border-t border-gray-200 block py-3" href="../../../templates/saasfolio/tailwind/login.html">Login</a>
+      </li>
+      <li class="signup py-4 border-t border-gray-200 p-4">
+        <a class=" px-3 py-2 bg-yellow-500 rounded border border-yellow-600 shadow font-semibold block" href="../../../templates/saasfolio/tailwind/signup.html">Signup for free</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+<div class="container mx-auto mt-4"> 
+<!-- Start Hero Content -->
+<div class="py-8 md:py-16 hero__content text-center w-4/5 mx-auto fade-in fade-in-first">
+  <h1 class="text-3xl md:text-5xl lg:text-5xl font-bold leading-tight">Powerful features</h1>
+  <p class="text-xl pt-4 pb-8 text-gray-700">Explain your unique solution in short and how it solves a problem your customer has.</p>
+  <div class="flex justify-center items-center flex-col">
+    <a class="bg-yellow-500 hover:bg-yellow-600 rounded border border-yellow-600 shadow font-semibold px-6 py-2 inline-block transition duration-500 ease-in-out cursor-pointer text-xl">Clear CTA Text</a>
+  </div>
+</div>
+<!-- End Hero Content -->
+</div>
+<!-- End Hero Content -->
+</div>
+<!-- End Hero -->
+<div class="py-8 text-center md:text-left mb-16  fade-in fade-in-second">
+<div class="container mx-auto">
+    <div class="flex flex-row w-4/5 mx-auto">
+        <div class="w-full md:w-3/4 md:mr-8">
+            <span class="text-yellow-500">Name of feature</span>
+            <h2 class="text-xl font-semibold">Expain the feature, but word it as benefits</h2>
+            <p class="text-md lg:text-lg pt-4 pb-8 text-gray-700">
+                “Save your favorites links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.
+            </p>
+        </div>
+        <div class="hidden md:block w-1/4">
+            <img data-src="../../../templates/saasfolio/tailwind/img/device-tablet-phone.png" class="lazy mx-auto z-10 relative lg:w-auto" alt="Device Tablet Phone"/>
+            <!-- Generated at https://www.landingfolio.com/tools/mockup-generator. Use coupon: FIRSTMONTHFREE to use it one month for free-->
+        </div>
+    </div>
+    <div class="flex flex-col md:flex-row md:flex-wrap w-full md:w-4/5 mx-auto">
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-settings.png" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">First main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-star.png" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Second main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-idea.png" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Third main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-user.png" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Fourth main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+    </div>
+    <!-- Start Feature  -->
+    <div class="flex  flex-col md:flex-row md:flex-wrap my-4 w-full md:w-4/5 mx-auto my-4">
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-settings.png" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">First main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-star.png" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Second main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-idea.png" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Third main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-user.png" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Fourth main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+    </div>
+    <!-- End Feature  -->
+</div>
+</div>
+<div class="py-8 text-center md:text-left mb-16 fade-in fade-in-third">
+<div class="container mx-auto">
+    <div class="flex flex-row w-4/5 mx-auto">
+        <div class="w-full md:w-3/4 md:mr-8">
+            <span class="text-yellow-500">Name of feature</span>
+            <h2 class="text-xl font-semibold">Expain the feature, but word it as benefits</h2>
+            <p class="text-md lg:text-lg pt-4 pb-8 text-gray-700">
+                “Save your favorites links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.
+            </p>
+        </div>
+        <div class="hidden md:block w-1/4">
+            <img data-src="../../../templates/saasfolio/tailwind/img/device-mobile-tablet-desktop.png" class="lazy mx-auto z-10 relative w-2/3 md:w-4/5 lg:w-auto" alt="Mobile Tablet Desktop Device"/>
+    <!-- Generated at https://www.landingfolio.com/tools/mockup-generator. Use coupon: FIRSTMONTHFREE to use it one month for free-->
+        </div>
+    </div>
+    <div class="flex flex-col md:flex-row md:flex-wrap w-full md:w-4/5 mx-auto">
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-settings.png" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">First main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-star.png" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Second main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-idea.png" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Third main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-user.png" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Fourth main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+    </div>
+    <!-- Start Feature  -->
+    <div class="flex  flex-col md:flex-row md:flex-wrap my-4 w-full md:w-4/5 mx-auto my-4">
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-settings.png" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">First main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-star.png" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Second main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-idea.png" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Third main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-user.png" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Fourth main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+    </div>
+    <!-- End Feature  -->
+</div>
+</div>
+<div class="py-8 text-center md:text-left mb-16">
+<div class="container mx-auto">
+    <div class="flex flex-row w-4/5 mx-auto">
+        <div class="w-full md:w-3/4 md:mr-8">
+            <span class="text-yellow-500">Name of feature</span>
+            <h2 class="text-xl font-semibold">Expain the feature, but word it as benefits</h2>
+            <p class="text-md lg:text-lg pt-4 pb-8 text-gray-700">
+                “Save your favorites links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.
+            </p>
+        </div>
+        <div class="hidden md:block w-1/4">
+            <img data-src="../../../templates/saasfolio/tailwind/img/device-tablet-phone.png" class="lazy mx-auto z-10 relative lg:w-auto" alt="Device Tablet Phone"/>
+    <!-- Generated at https://www.landingfolio.com/tools/mockup-generator. Use coupon: FIRSTMONTHFREE to use it one month for free-->
+        </div>
+    </div>
+    <div class="flex flex-col md:flex-row md:flex-wrap w-full md:w-4/5 mx-auto">
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-settings.png" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">First main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-star.png" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Second main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-idea.png" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Third main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-user.png" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Fourth main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+    </div>
+    <!-- Start Feature  -->
+    <div class="flex  flex-col md:flex-row md:flex-wrap my-4 w-full md:w-4/5 mx-auto my-4">
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-settings.png" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">First main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-star.png" class="w-10 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Second main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-idea.png" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Third main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+        <!-- Start Feature -->
+        <div class="w-full lg:w-1/4 md:w-1/2 text-center lg:text-left mt-4 flex flex-col justify-between">
+            <img data-src="../../../templates/saasfolio/tailwind/img/icon-user.png" class="w-6 lazy self-start py-2 mx-auto lg:mx-0" alt="Benefit Icon"/>
+            <!-- License by Icon8. Find many other icons in this style via https://icons8.com/icons/cotton -->
+            <div>
+            <h4 class="mb-0 font-bold">Fourth main product benefit</h4>
+            <p class="mb-0">Short text to support claim</p>
+            </div>
+        </div>
+        <!-- End Feature -->
+    </div>
+    <!-- End Feature  -->
+</div>
+</div>
+<!-- Start CTA Block -->
+<div class="bg-yellow-100 py-16 border-t border-yellow-300 px-4 md:px-16 lg:px-0">
+<div class="container mx-auto py-4">
+  <!-- Start Image -->
+  <div class=" py-4">
+    <div class="lg:w-3/12 col-md-4 mx-auto text-center">
+      <img data-src="../../../templates/saasfolio/tailwind/img/features-drawing-moonlanding.png" class="lazy mx-auto w-100 w-1/2 lg:w-full" alt="Drawing Moonlanding"/>
+    </div>
+  </div>
+  <!-- End Image -->
+  <!-- Start Content -->
+  <div class="">
+    <div class="lg:w-3/6 mx-auto text-center">
+      <h2 class="text-2xl md:text-4xl lg:text-4xl font-bold">Or,ask if your visitor wants to solve problem X today</h2>
+      <p class="text-md md:text-xl lg:text-lg pt-4 pb-8 text-gray-800">Explain how your solution will solve this problem and ask them to start a free trial, or any other low-key CTA they could take.</p>
+      <div class="flex justify-center items-center flex- mb-2">
+        <a class="bg-yellow-500 hover:bg-yellow-600 rounded border border-yellow-600 hover:border-yellow-700 shadow font-semibold px-4 py-2 inline-block mx-2 cursor-pointer transition duration-500 ease-in-out">Clear CTA Text</a>
+        <a href="../../../templates/saasfolio/tailwind/pricing.html" class="rounded border border-gray-700 hover:bg-blue-300 px-4 py-2 inline-block mx-2 cursor-pointer transition duration-500 ease-in-out">View pricing</a>
+      </div>
+      <small class="capitalize mt-2">Reduce Risk: Free 14 day trial</small>
+    </div>
+  </div>
+  <!-- End Content -->
+  <!-- Start Testimonial -->
+  <div class=" mt-8 ">
+    <div class="lg:w-1/2 mx-auto mt-4 text-center ">
+      <blockquote class="text-gray-700 italic text-sm  lg:text-lg">
+        “Powerfull and relevant testimonial of Customer X. This content should focus on the result the product had for this customer or answer a doubt your potential customer could have. "
+      </blockquote>
+      <div class="mt-3 flex justify-center content-center items-center">
+          <img data-src="../../../templates/saasfolio/tailwind/img/avatar/avatar-1.png" class="lazy self-start" alt="Testimonial Avatar"/>
+          <!-- Generate free faces via: https://generated.photos/faces -->
+          <span class="ml-2 font-bold text-gray-900">Customer Name, CEO of Company Name</span>
+      </div>
+    </div>
+  </div>
+  <!-- End Testimonial -->
+</div>
+</div>
+{% endblock body %}

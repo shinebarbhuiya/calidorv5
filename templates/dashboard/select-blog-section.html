@@ -1,0 +1,73 @@
+{% extends 'dashboard/main.html'  %}
+{% load static %}
+
+{% block body %}
+
+<div class="container-fluid page-body-wrapper">
+
+
+  <!-- partial -->
+  <!-- partial:partials/_sidebar.html -->
+
+
+
+  {% include 'dashboard/sidebar.html' %}
+  <!-- partial -->
+  <div class="main-panel">
+    <div class="content-wrapper">
+      
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-justify mb-5 ">🎉 Select Blog Sections That You Want To Use In Your Blog 🎉</h2>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                              <thead>
+                                <tr class="bg-primary text-white">
+                                  <th class="card-title text-white">Select</th>
+                                  <th class="card-title text-white">Topic</th>
+              
+                                </tr>
+                              </thead>
+                              <tbody>    
+                                {% for section in blogSections %}                         
+                                <tr>
+                                  <!-- <td><input class="form-control form-check-success" type="checkbox" name="{{section}}" id=""></td> -->
+                                  <td><input type="checkbox" data-toggle="switchbutton" data-onstyle="primary" name="{{section}}"></td>
+                                  <td class="card-title mb-0 text-primary">{{section}}</td>             
+                                </tr>
+                                {% endfor %}
+                              </tbody>
+                            </table>
+                            
+                          </div>
+                          <button class="btn btn-primary mt-5 btn-lg btn-block">KAABOOM!!! </button>
+                          
+
+    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </form>
+    <!-- content-wrapper ends -->
+    {% include  'dashboard/footer.html' %}
+    <!-- partial -->
+  </div>
+  <!-- main-panel ends -->
+</div>
+
+<script>
+  function showLoaderOnClick(url) {
+      showLoader();
+      window.location=url;
+  }
+function showLoader(){
+      $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+  }
+</script>
+{% endblock body %}

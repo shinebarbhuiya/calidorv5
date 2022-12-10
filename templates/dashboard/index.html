@@ -1,0 +1,173 @@
+{% extends 'dashboard/main.html'  %}
+{% load static %}
+
+{% block body %}
+
+<div class="container-fluid page-body-wrapper">
+
+
+  <!-- partial -->
+  <!-- partial:partials/_sidebar.html -->
+
+
+
+  {% include 'dashboard/sidebar.html' %}
+  <!-- partial -->
+  <div class="main-panel">
+    <div class="content-wrapper">
+   
+
+      <div class="row">
+        <div class="col-md-6 grid-margin stretch-card">
+          <div class="card tale-bg">
+            <div class="card-people mt-auto">
+              <img src="{% static 'images/dashboard/people.svg' %}" alt="people">
+              <div class="weather-info">
+                <div class="d-flex">
+                  <!-- <div>
+                    <h2 class="mb-0 font-weight-normal"><i class="icon-sun me-2"></i>31<sup>C</sup></h2>
+                  </div> -->
+                  <!-- <div class="ms-2">
+                    <h4 class="location font-weight-normal">Chicago</h4>
+                    <h6 class="font-weight-normal">Illinois</h6>
+                  </div> -->
+                  <div class="ms-2">
+                    <h3 class="mb-3">👋  Welcome {{user.first_name}}! 👋 </h3>
+                    <h4 class="font-weight-normal"> Inspired to start writing today? </h4>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 grid-margin transparent">
+          <div class="row">
+            <div class="col-md-6 mb-4 stretch-card transparent">
+              <div class="card card-tale">
+                <div class="card-body">
+                  <p class="mb-4 card-title text-white">Blogs Written</p>
+                  <p class="fs-30 mb-2">{{numBlogs}} Posts</p>
+                  <p>You are indeed a superhuman!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4 stretch-card transparent">
+              <div class="card card-dark-blue">
+                <div class="card-body">
+                  <p class="mb-4 card-title text-white">Words Generated</p>
+                  <p class="fs-30 mb-2">{{monthCount}} Words</p>
+                  <p>Wooah! That's a lot of words</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
+              <div class="card card-light-blue">
+                <div class="card-body">
+                  <p class="mb-4 card-title text-white">Time Saved</p>
+                  <p class="fs-30 mb-2">{{timeSaved}} Minutes</p>
+                  <p class="">You can watch a movie with the free time.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 stretch-card transparent">
+              <div class="card card-light-danger">
+                <div class="card-body">
+                  <p class="mb-4 card-title text-white">Count Reset</p>
+                  <p class="fs-30 mb-2">{{countReset}}</p>
+                  <p>Oh No!!! You have so much less time left</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        {% if empty_blog %}
+        <div class="row">
+          <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                  <div class="card-body">
+                      <h2 class="text-justify mb-5 ">Saved Blogs</h2>
+                      <div class="table-responsive">
+                          <table class="table table-hover">
+                            <thead>
+                              <tr class="bg-primary text-white">
+                                <th class="card-title text-white">Topic</th>
+                                <th class="card-title text-white">Action</th>
+            
+                              </tr>
+                            </thead>
+                            <tbody> 
+                              {% for blog in empty_blog%}   
+                              <tr class="">
+                                <!-- <td><input class="form-control form-check-success" type="checkbox" name="{{section}}" id=""></td> -->
+                                <td class="card-title mb-0 text-primary" style="width: 75%"><a href="{% url 'createBlogFromTopic' blog.uniqueId %}"></a>{{blog.title}} </td>  
+                                <td><a href="{% url 'delete_blog_topic' blog.uniqueId %}"><button class="btn btn-danger text-white">Delete</button></a></td>           
+                              </tr>
+                              {% endfor %}
+                            </tbody>
+                          </table>
+                          
+                        </div>
+  
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+      {% endif %}
+
+      {% if completed_blogs %}
+        <div class="row">
+          <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                  <div class="card-body">
+                      <h2 class="text-justify mb-5 ">Completed Blog</h2>
+                      <div class="table-responsive">
+                          <table class="table table-hover">
+                            <thead>
+                              <tr class="bg-primary text-white">
+                                <th class="card-title text-white">Topic</th>
+                                <th class="card-title text-white">Action</th>
+            
+                              </tr>
+                            </thead>
+                            <tbody> 
+                              {% for blog in completed_blogs%}   
+                              <tr class="">
+                                <!-- <td><input class="form-control form-check-success" type="checkbox" name="{{section}}" id=""></td> -->
+                                <td class="card-title mb-0 text-primary" style="width: 75%"><a href="{% url 'createBlogFromTopic' blog.uniqueId %}"></a>{{blog.title}} </td>  
+                                <td><a href="{% url 'view_generated_blog' blog.slug %}"><button class="btn btn-primary text-white">View Blog</button></a></td>           
+                              </tr>
+                              {% endfor %}
+                            </tbody>
+                          </table>
+                          
+                        </div>
+  
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+      {% endif %}
+
+
+      </div>
+
+    
+
+
+
+
+    </div>
+    <!-- content-wrapper ends -->
+    {% include  'dashboard/footer.html' %}
+    <!-- partial -->
+  </div>
+  <!-- main-panel ends -->
+</div>
+{% endblock body %}
