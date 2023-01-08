@@ -44,7 +44,7 @@ def dashboard(request):
     context['numBlogs'] = len(completed_blogs)
     context['monthCount'] = str(monthCount)
     context['timeSaved'] = int(timeSaved)
-    context['countReset'] = '31st December 2022'
+    context['countReset'] = '20th January 2023'
     return render(request, 'dashboard/index.html', context=context)
 
 @login_required

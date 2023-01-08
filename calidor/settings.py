@@ -51,7 +51,13 @@ INSTALLED_APPS = [
     'landing',
     'dashboard',
     'crispy_forms',
+    'django_extensions',
 ]
+
+GRAPH_MODELS ={
+    'all_applications': True,
+    'graph_models': True,
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -155,7 +161,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_ROOT = BASE_DIR / 'uploads'
 
-OPENAI_API_KEYS = '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'
+OPENAI_API_KEYS = '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'
 
 
 
